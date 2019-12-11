@@ -1,0 +1,41 @@
+{
+    "name": "vemcogroup/nova-charts",
+    "description": "A Laravel Nova card to show charts from the Chart.js library.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "chart",
+        "chartjs"
+    ],
+    "homepage": "https://github.com/vemcogroup/nova-charts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henrik B Hansen",
+            "email": "hbh@vemcogroup.com",
+            "homepage": "https://www.vemcogroup.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vemcogroup\\Charts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vemcogroup\\Charts\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
