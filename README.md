@@ -5,7 +5,7 @@
 
 This card tool gives the possibility to add cards with charts from [Chart.js](https://www.chartjs.org/).
 
-![Screenshot 2019-12-13 at 09 16 13](https://user-images.githubusercontent.com/283184/70784531-f5d01000-1d89-11ea-84c8-88c4642fd71e.png)
+![Screenshot 2019-12-13 at 09 55 37](https://user-images.githubusercontent.com/283184/70787345-c243b480-1d8e-11ea-98d5-6cb36764c4b2.png)
 
 ## Installation
 
@@ -46,8 +46,15 @@ public function chartDashboardData($selection)
     return $this->chartResourceData($selection);
 }
 ``` 
-
 When adding the chart card to a resource these options are available:
+
+**At the moment its only possible to use chart on resource detail page**
+
+```php
+return [
+    (new \Vemcogroup\Charts\Chart)->onlyOnDetail()
+];
+```
 
 ### Title
 You can set the title of the card.
