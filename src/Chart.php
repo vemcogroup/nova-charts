@@ -19,7 +19,7 @@ class Chart extends Card
         $this->withMeta([
             'type' => self::CHART_TYPE_BAR,
             'selection' => null,
-            'resource' => null,
+            'model' => null,
             'selections' => [],
             'showLabels' => true,
             'showLegends' => true,
@@ -42,9 +42,9 @@ class Chart extends Card
         return $this->withMeta(['type' => $type]);
     }
 
-    public function resource($resource)
+    public function model($model)
     {
-        return $this->withMeta(['resource' => $resource]);
+        return $this->withMeta(['model' => $model]);
     }
 
     public function selections($selections)

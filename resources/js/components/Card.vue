@@ -73,11 +73,12 @@ export default {
     url() {
       if (this.resource) {
         return (
-          "/nova-vendor/nova-charts/data/" +
-          this.resourceName +
+          "/nova-vendor/nova-charts/data" +
           "/" +
           this.resourceId +
-          "/?selection=" +
+          "/?model=" +
+          this.card.model +
+          "&selection=" +
           this.selection +
           "&type=" +
           this.card.type
@@ -85,9 +86,10 @@ export default {
       }
 
       return (
-        "/nova-vendor/nova-charts/data/" + 
-        this.card.resource +
-        "/?selection=" +
+        "/nova-vendor/nova-charts/data" +
+        "/?model=" +
+        this.card.model +
+        "&selection=" +
         this.selection +
         "&type=" +
         this.card.type

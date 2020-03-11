@@ -107,8 +107,18 @@ You are also able to select which selection to start from.
 ```php
 (new \Vemcogroup\Charts\Chart())->startFromSelection(2019);
 ```
-            
-### Resource
+
+### Model (v3.x)
+#### Only for version 3.x
+  
+Its required to set the model from where you want the data.
+```php
+(new \Vemcogroup\Charts\Chart())->model(\App\Company::class)
+```
+     
+### Resource (2.x | 1.x)
+#### Only for version 1.x | 2.x
+
 If you want to show a chart on a dashboard the chart dont know what resources to take data from, this can be defined by this option.
 
 Remember to type resource as plural, ex companies 
