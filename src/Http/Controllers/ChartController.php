@@ -1,6 +1,6 @@
 <?php
 
-namespace Vemcogroup\Charts\Controller;
+namespace Vemcogroup\Charts\Http\Controller;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
